@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "670592326957",
+    "firebase_url": "https://bestellingapp-dec2d.firebaseio.com",
+    "project_id": "bestellingapp-dec2d",
+    "storage_bucket": "bestellingapp-dec2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670592326957:android:a02db020c8aa1bb2",
+        "android_client_info": {
+          "package_name": "com.realdolmen.bestellingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "670592326957-bfbca1apk29k6efrusd7htks8lr97hio.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.realdolmen.bestellingapp",
+            "certificate_hash": "4d70a0c6a91fea5ea22d0678b454a61d09c3fd57"
+          }
+        },
+        {
+          "client_id": "670592326957-hc27il7h3c5gj3ld7hqg1ticjhfb8fgn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsFWw_KwQvZOzHmW8v3i3Kbk68opPAOj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "670592326957-hc27il7h3c5gj3ld7hqg1ticjhfb8fgn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
