@@ -223,13 +223,18 @@ class OverviewActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.action_settings -> {
-
                 Toast.makeText(applicationContext, "click on setting", Toast.LENGTH_LONG).show()
                 true
             }
             R.id.action_exit ->{
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
+                val i = Intent(this, MainActivity::class.java)
+                startActivity(i)
+                Toast.makeText(applicationContext, "click on exit", Toast.LENGTH_LONG).show()
+                true
+            }
+            R.id.action_scanner ->{
+                val i = Intent(this, ScannerActivity::class.java)
+                startActivity(i)
                 Toast.makeText(applicationContext, "click on exit", Toast.LENGTH_LONG).show()
                 true
             }
