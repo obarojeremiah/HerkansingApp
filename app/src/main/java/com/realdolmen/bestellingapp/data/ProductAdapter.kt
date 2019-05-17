@@ -24,7 +24,7 @@ class ProductAdapter (private val list: ArrayList<ListCardItems>, private val co
             waffelName.text = waffels.type
             countryOfOrigin.text = waffels.origin
             prijsWaffels.text = waffels.price
-            //imagesOfMeal.im=meal.img
+
 
             imageofWaffel.setImageResource(waffels.img)
             itemView.setOnClickListener{

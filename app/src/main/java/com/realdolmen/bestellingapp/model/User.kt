@@ -1,4 +1,4 @@
-package com.realdolmen.bestellingapp
+package com.realdolmen.bestellingapp.model
 
 class User {
     var userid: String? = null

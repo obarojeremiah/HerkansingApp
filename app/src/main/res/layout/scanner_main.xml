@@ -16,7 +16,7 @@
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="{{please scan first}}"
+            android:text="{{please scan first click on the button}}"
             android:id="@+id/txtValue"
             app:layout_constraintLeft_toRightOf="@id/txtValueLabel"
             tools:ignore="MissingConstraints"/>

@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
+import com.realdolmen.bestellingapp.model.User
 
 class UserList(private val context: Activity, //list of users
                internal var Users: List<User>) : ArrayAdapter<User>(context, R.layout.layout_user_list, Users) {

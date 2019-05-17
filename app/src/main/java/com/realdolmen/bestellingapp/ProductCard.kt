@@ -63,7 +63,7 @@ class ProductCard : AppCompatActivity() {
             waffel.price = prijsWaffels[i]
             waffel.img = imageIdList[i]
             waffel.origin=infoWaffels[i]
-           // waffel.originWaffles = CountryWaffelsList[i]
+           waffel.extraInfoWaffles = CountryWaffelsList[i]
 
             mealListCrds?.add(waffel)
         }
@@ -101,7 +101,7 @@ class ProductCard : AppCompatActivity() {
             R.id.action_scanner ->{
                 val i = Intent(this, ScannerActivity::class.java)
                 startActivity(i)
-                Toast.makeText(applicationContext, "click on exit", Toast.LENGTH_LONG).show()
+                Toast.makeText(applicationContext, "scanner", Toast.LENGTH_LONG).show()
                 true
             }
             else -> super.onOptionsItemSelected(item)

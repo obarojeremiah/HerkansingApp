@@ -31,7 +31,7 @@ class DetailProduct : AppCompatActivity() {
 
         val fab = findViewById<FloatingActionButton>(R.id.fab)
         fab.setOnClickListener {
-            val uri = Uri.parse("smsto:12346556")
+            val uri = Uri.parse("smsto:1482758963")
             val intent = Intent(Intent.ACTION_SENDTO, uri)
             intent.putExtra("sms_body", "Hello I have a question...")
             startActivity(intent)
@@ -65,7 +65,7 @@ class DetailProduct : AppCompatActivity() {
             R.id.action_scanner ->{
                 val i = Intent(this, ScannerActivity::class.java)
                 startActivity(i)
-                Toast.makeText(applicationContext, "click on exit", Toast.LENGTH_LONG).show()
+                Toast.makeText(applicationContext, "scanner", Toast.LENGTH_LONG).show()
                 true
             }
             else -> super.onOptionsItemSelected(item)

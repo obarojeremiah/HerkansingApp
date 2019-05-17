@@ -10,6 +10,7 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.*
 import com.google.firebase.database.*
+import com.realdolmen.bestellingapp.model.User
 import java.util.ArrayList
 
 class OverviewActivity : AppCompatActivity() {
@@ -36,7 +37,7 @@ class OverviewActivity : AppCompatActivity() {
         // method for find ids of views
         findViews()
 
-        // to maintian click listner of views
+        // to maintain click listener of views
         initListner()
     }
 
@@ -84,7 +85,7 @@ class OverviewActivity : AppCompatActivity() {
                     //getting User from firebase console
                     val user = postSnapshot.getValue(User::class.java)
                     //adding User to the list
-                    if (user != null) Users.add(user)
+                    user?.let { Users.add(it) }
                 }
                 //creating Userlist adapter
                 val UserAdapter = UserList(this@OverviewActivity, Users)
@@ -165,7 +166,7 @@ class OverviewActivity : AppCompatActivity() {
     }
 
 
-    private fun addUser() {
+   fun addUser() {
 
 
         //getting the values to save
@@ -209,16 +210,6 @@ class OverviewActivity : AppCompatActivity() {
         return true
     }
 
-    //sms doorsturen als aankoop werd gemaakt
-    //checkbox voor of na aflevering
-
-    /* fun sendSMS()
-     {
-         val uri = Uri.parse("smsto:12346556")
-         val intent = Intent(Intent.ACTION_SENDTO, uri)
-         intent.putExtra("sms_body", "Here goes your message...")
-         startActivity(intent)
-     }*/
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
@@ -235,7 +226,7 @@ class OverviewActivity : AppCompatActivity() {
             R.id.action_scanner ->{
                 val i = Intent(this, ScannerActivity::class.java)
                 startActivity(i)
-                Toast.makeText(applicationContext, "click on exit", Toast.LENGTH_LONG).show()
+                Toast.makeText(applicationContext, "scanner", Toast.LENGTH_LONG).show()
                 true
             }
             else -> super.onOptionsItemSelected(item)
@@ -243,3 +234,4 @@ class OverviewActivity : AppCompatActivity() {
     }
 
 }
+

@@ -43,12 +43,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    private fun signOut() {
-
-        mGoogleSignInClient!!.signOut()
-        //val i = Intent(this, Bestellen::class.java)
-        //startActivity(i)
-    }
 
 
     private fun signIn() {
