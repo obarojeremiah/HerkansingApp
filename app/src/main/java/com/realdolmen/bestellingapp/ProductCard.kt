@@ -5,11 +5,11 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import com.realdolmen.bestellingapp.data.ProductAdapter
-import com.realdolmen.bestellingapp.model.Bestelling2
 import com.realdolmen.bestellingapp.model.ListCardItems
 import kotlinx.android.synthetic.main.activity_product_card.*
 
@@ -78,6 +78,11 @@ class ProductCard : AppCompatActivity() {
         //intent.putExtra(Intent.EXTRA_TEXT, "Welcome to the second activity" );
         startActivity(intent)
 
+    }
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        menuInflater.inflate(R.menu.menu, menu)
+        return true
     }
 
 

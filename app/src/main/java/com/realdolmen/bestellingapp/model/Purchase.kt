@@ -8,7 +8,7 @@ import android.widget.Toast
 import com.realdolmen.bestellingapp.R
 import kotlinx.android.synthetic.main.activity_bestelling2.*
 
-class Bestelling2 : AppCompatActivity() {
+class Purchase : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
